@@ -138,16 +138,18 @@ Python also allows us to use **conditional expressions** (or **ternary
 operators**) to evaluate the truthiness of complex statements in a single line.
 
 ```py
-age = 1
+age = 10
 
-is_baby = 'baby' if age < 2 else 'not a baby'
+is_baby = "not a baby" if age > 12 else "baby"
+
+print (is_baby)
 ```
 
 This is the equivalent of the following `if/else` statement:
 
 ```py
-age = 1
-if age < 2:
+age = 10
+if age > 12:
   is_baby = 'baby'
 else:
   is_baby = 'not a baby'
